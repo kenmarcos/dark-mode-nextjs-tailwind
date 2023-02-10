@@ -1,4 +1,5 @@
 import { Button } from "@/components/Button";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,9 +16,18 @@ export default function Home() {
         modi!
       </p>
 
-      <Button className="bg-blue-400 dark:bg-purple-600 text-white font-bold">
-        Meu currículo
-      </Button>
+      <div className="space-x-8">
+        <Button className="btn-outline-primary">Sobre mim</Button>
+
+        <Link
+          href="https://drive.google.com/file/d/1dliLFFyLMfrCiAve5SycyjSCGqKCnmfF/view"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary"
+        >
+          Meu currículo
+        </Link>
+      </div>
     </section>
   );
 }
