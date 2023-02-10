@@ -22,7 +22,7 @@ export const ThemeToggle = () => {
 
   return (
     <Button
-      className="text-purple-600 dark:text-yellow-400"
+      className="border-none text-purple-600 dark:text-yellow-400"
       onClick={() => setTheme(currentTheme === "dark" ? "light" : "dark")}
     >
       {currentTheme === "dark" ? (

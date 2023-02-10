@@ -1,3 +1,4 @@
+import { LinkProps } from "next/link";
 import { ButtonHTMLAttributes, ReactNode } from "react";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -6,10 +7,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button = ({ children, ...rest }: ButtonProps) => {
   return (
-    <button
-      {...rest}
-      className={`p-2 rounded-md drop-shadow-lg hover:ring-2 hover:ring-gray-300 ${rest.className}`}
-    >
+    <button {...rest} className={`btn ${rest.className}`}>
       {children}
     </button>
   );
